@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="myDiv"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!--unter Script erlaubt uns die HTML-Code in JS zu schreiben-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        //"ReactDom" aufgerufen und eine Methode "render" verwendet
+        //In Klammer fragt erst welche Element,antwort h1 und fragt wo,antwort in mydiv
+        ReactDOM.render(<h1>Hallo Freunden</h1>, document.getElementById("myDiv"))
+        //ganze projekt kann hier als ein große Komponet stellen
+        //<h1>Hallo Freunden</h1> diese Befehl heisst JSX:JavaScript XML
+        //XML: Tag sind nicht definiert kann man selber erstellen
+    </script>
+</body>
+</html>
